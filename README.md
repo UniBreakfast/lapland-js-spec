@@ -25,7 +25,7 @@ It exports the ```lapland``` object with the method to start it:
 #### ```lapland.wish(details)```
 an async method that takes ```details``` object with the next properties:
 
-* `details.PORT` - a port to run at
+* **`details.PORT`** - a port to run at
 
 ## Santa
 [(structure).](#modular-structure)/santa/index.js
