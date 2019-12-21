@@ -1,4 +1,5 @@
-# Lapland Vanilla JS backend framework specification
+# Lapland Vanilla* JS backend framework specification
+###### *the only exception is mongodb module
 
 Lapland is YAFJSF (yet another fraken JavaScript framework) I'm curious to play in development of.))
 Here's the [repo with the main module](https://github.com/UniBreakfast/lapland) itself.
