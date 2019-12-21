@@ -7,15 +7,15 @@ I struggled for some time trying to find the names for my modules that I would a
 
 ## Modular structure
 
-* [Lapland](#lapland) - loader/starter module
-* [Santa](#santa) - http server module
-* [gild](#gild) - request handler function
-* [home](#home) - public folder with client side files
-* [apiBox](#apibox) - folder with api routes
-* [apiElf](#apielf) - module to load and handle api routes
-* [sesElf](#seself) - module to handle sessions
-* [passElf](#pasself) - module to handle passwords
-* [dataElf](#dataelf) - module to handle data storage (db etc.)
+* [Lapland](#lapland) - loader/starter module ([repo](#https://github.com/UniBreakfast/lapland))
+* [Santa](#santa) - http server module ([repo](#https://github.com/UniBreakfast/santa))
+* [gild](#gild) - request handler function (above)
+* [home](#home) - public folder with client side files ([repo](#https://github.com/UniBreakfast/home))
+* [apiBox](#apibox) - folder with api routes ([repo](#https://github.com/UniBreakfast/apibox))
+* [apiElf](#apielf) - module to load and handle api routes ([repo](#https://github.com/UniBreakfast/apielf))
+* [sesElf](#seself) - module to handle sessions ([repo](#https://github.com/UniBreakfast/seself))
+* [passElf](#pasself) - module to handle passwords ([repo](#https://github.com/UniBreakfast/pasself))
+* [dataElf](#dataelf) - module to handle data storage (db etc.) ([repo](#https://github.com/UniBreakfast/dataelf))
 
 ## Lapland
 [(structure).](#modular-structure)/lapland.js
