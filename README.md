@@ -1,11 +1,11 @@
 # lapland-js-spec - LaplandJS backend framework specification
-YAJSF (yet another JavaScript framework) I'm curious to play in development of.))
+YAFJSF (yet another fraken JavaScript framework) I'm curious to play in development of.))
 I struggled for some time trying to find the names for my modules I would actually like. Until I decided to see them as actors working on the common task - in a sense like Santa's elfs. So the whole naming theme goes from there.
 
 ## Modular structure
 
-* Lapland - loader/starter module
-* Santa - http server module
+* [Lapland](#lapland) - loader/starter module
+* [Santa](#santa) - http server module
 * gild - request handler function
 * home - public folder with client side files
 * apiBox - folder with api routes
@@ -13,3 +13,13 @@ I struggled for some time trying to find the names for my modules I would actual
 * sesElf - module to handle sessions
 * passElf - module to handle passwords
 * dataElf - module to handle data storage (db etc.)
+
+## Lapland
+[(structure).](#modular-structure)/lapland.js
+
+The main module to load and start the rest of the framework
+
+## Santa
+[(structure).](#modular-structure)/santa/index.js
+
+A server module, includes the request handler [gild](#gild)
