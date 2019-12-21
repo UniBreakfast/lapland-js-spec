@@ -1,9 +1,9 @@
-# Lapland Vanilla* JS backend framework specification
-###### *the only exception is mongodb module
+# Lapland specification (Vanilla* JS backend framework) 
+*\*the only exception is mongodb module*
 
 Lapland is YAFJSF (yet another fraken JavaScript framework) I'm curious to play in development of.))
 Here's the [repo with the main module](https://github.com/UniBreakfast/lapland) itself.
-I struggled for some time trying to find the names for my modules I would actually like. Until I decided to see them as actors working on the common task - in a sense like Santa's elfs. So the whole naming theme goes from there.
+I struggled for some time trying to find the names for my modules that I would actually like. Until I decided to see them as actors working on the common task - in a sense like Santa's elfs. So the whole naming theme goes from there.
 
 ## Modular structure
 
@@ -46,7 +46,7 @@ Public folder with the front-end files (client side) available on the server for
 ## apiBox
 [(structure).](#modular-structure)/api/index.js
 
-A server module, includes the request handler [gild](#gild)
+Aa /api folder with, includes the request handler [gild](#gild)
 
 ## apiElf
 [(structure).](#modular-structure)/apielf/index.js
