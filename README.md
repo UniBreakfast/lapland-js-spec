@@ -7,18 +7,19 @@ I struggled for some time trying to find the names for my modules that I would a
 
 ## Modular structure
 
-* [Lapland](#lapland) - loader/starter module ([repo](#https://github.com/UniBreakfast/lapland))
-* [Santa](#santa) - http server module ([repo](#https://github.com/UniBreakfast/santa))
+* [Lapland](#lapland) - loader/starter module ([repo](https://github.com/UniBreakfast/lapland))
+* [Santa](#santa) - http server module ([repo](https://github.com/UniBreakfast/santa))
 * [gild](#gild) - request handler function (above)
-* [home](#home) - public folder with client side files ([repo](#https://github.com/UniBreakfast/home))
-* [apiBox](#apibox) - folder with api routes ([repo](#https://github.com/UniBreakfast/apibox))
-* [apiElf](#apielf) - module to load and handle api routes ([repo](#https://github.com/UniBreakfast/apielf))
-* [sesElf](#seself) - module to handle sessions ([repo](#https://github.com/UniBreakfast/seself))
-* [passElf](#pasself) - module to handle passwords ([repo](#https://github.com/UniBreakfast/pasself))
-* [dataElf](#dataelf) - module to handle data storage (db etc.) ([repo](#https://github.com/UniBreakfast/dataelf))
+* [home](#home) - public folder with client side files ([repo](https://github.com/UniBreakfast/home))
+* [apiBox](#apibox) - folder with api routes ([repo](https://github.com/UniBreakfast/apibox))
+* [apiElf](#apielf) - module to load and handle api routes ([repo](https://github.com/UniBreakfast/apielf))
+* [sesElf](#seself) - module to handle sessions ([repo](https://github.com/UniBreakfast/seself))
+* [passElf](#pasself) - module to handle passwords ([repo](https://github.com/UniBreakfast/pasself))
+* [dataElf](#dataelf) - module to handle data storage (db etc.) ([repo](https://github.com/UniBreakfast/dataelf))
 
 ## Lapland
-[(structure).](#modular-structure)/lapland.js
+[(structure).](#modular-structure)/lapland.js 
+([repo](https://github.com/UniBreakfast/lapland))
 
 The main module to load and start the rest of the framework.
 It exports the ```lapland``` object with the method to start it:
@@ -31,7 +32,7 @@ an async method that takes ```details``` object with the next properties:
 ## Santa
 [(structure).](#modular-structure)/santa/index.js
 
-A server module, includes the request handler [gild](#gild).
+A server module, creates an http-server and exports it, includes the request handler [gild](#gild).
 
 ### gild
 [(structure).](#modular-structure)/santa/index.js
@@ -44,9 +45,9 @@ A function where the handling of every child's (client's) request to the [Santa]
 Public folder with the front-end files (client side) available on the server for client requests.
 
 ## apiBox
-[(structure).](#modular-structure)/api/index.js
+[(structure).](#modular-structure)/api/routes/*.js
 
-Aa /api folder with, includes the request handler [gild](#gild)
+An /api folder with js files exporting certain api handling functions.
 
 ## apiElf
 [(structure).](#modular-structure)/apielf/index.js
