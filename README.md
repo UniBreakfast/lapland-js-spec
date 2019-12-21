@@ -30,17 +30,17 @@ an async method that takes ```details``` object with the next properties:
 ## Santa
 [(structure).](#modular-structure)/santa/index.js
 
-A server module, includes the request handler [gild](#gild)
+A server module, includes the request handler [gild](#gild).
 
 ### gild
 [(structure).](#modular-structure)/santa/index.js
 
-A server module, includes the request handler [gild](#gild)
+A function where the handling of every child's (client's) request to the [Santa](#santa) (server) happens.
 
 ## home
-[(structure).](#modular-structure)/santa/index.js
+[(structure).](#modular-structure)/home/*.html, *.css, *.js, *.jpg, *.png, ...
 
-A server module, includes the request handler [gild](#gild)
+Public folder with the front-end files (client side) available on the server for client requests.
 
 ## apiBox
 [(structure).](#modular-structure)/api/index.js
