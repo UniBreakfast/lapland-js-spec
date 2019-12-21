@@ -22,11 +22,10 @@ I struggled for some time trying to find the names for my modules I would actual
 The main module to load and start the rest of the framework.
 It exports the ```lapland``` object with the method to start it:
 
-#### lapland.wish(details)
+#### ```lapland.wish(details)```
 an async method that takes ```details``` object with the next properties:
 
-* `details.PORT`
-a port to run at
+* `details.PORT` - a port to run at
 
 ## Santa
 [(structure).](#modular-structure)/santa/index.js
