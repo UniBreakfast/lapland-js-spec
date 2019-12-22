@@ -57,13 +57,13 @@ An /api folder with js files exporting certain api handling functions.
 [(structure).](#modular-structure)/apielf/index.js
 <sub>[(all files in repo)](https://github.com/UniBreakfast/apielf)</sub>
 
-A server module, includes the request handler [gild](#gild)
+A module that loads api handling functions from [apiBox](#apibox) into an `api` object, selects and calls one when it is needed upon request.
 
 ## sesElf
 [(structure).](#modular-structure)/seself/index.js
 <sub>[(all files in repo)](https://github.com/UniBreakfast/seself)</sub>
 
-A server module, includes the request handler [gild](#gild)
+A module, includes the request handler [gild](#gild)
 
 ## passElf
 [(structure).](#modular-structure)/pasself/index.js
