@@ -20,7 +20,7 @@ I struggled for some time trying to find the names for my modules that I would a
 * [dataElf](#dataelf) - module to handle data storage (db etc.) ([repo](https://github.com/UniBreakfast/dataelf))
 
 ## Flowcharts
-Interaction Diagrams are on (this page)[https://github.com/UniBreakfast/lapland-js-spec/blob/master/flowcharts.md#bare-minimum-interactions]
+Interaction Diagrams are on [this page](https://github.com/UniBreakfast/lapland-js-spec/blob/master/flowcharts.md#bare-minimum-interactions)
 
 ## Lapland
 [(structure).](#modular-structure)/lapland.js 
