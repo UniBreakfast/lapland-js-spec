@@ -19,7 +19,7 @@ I struggled for some time trying to find the names for my modules that I would a
 * [passElf](#pasself) - module to handle passwords ([repo](https://github.com/UniBreakfast/pasself))
 * [dataElf](#dataelf) - module to handle data storage (db etc.) ([repo](https://github.com/UniBreakfast/dataelf))
 
-## Flowcharts
+### Flowcharts
 Interaction Diagrams are on [this page](https://github.com/UniBreakfast/lapland-js-spec/blob/master/flowcharts.md#bare-minimum-interactions)
 
 ## Lapland
