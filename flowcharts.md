@@ -1,3 +1,6 @@
+## Modular structure description
+[is on this page](https://github.com/UniBreakfast/lapland-js-spec/blob/master/README.md#modular-structure)
+
 ## Bare minimum interactions
 ![Bare minimum interactions](https://raw.githubusercontent.com/UniBreakfast/lapland-js-spec/master/bare%20minimum%20interactions.png)
 
