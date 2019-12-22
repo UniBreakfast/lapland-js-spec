@@ -2,7 +2,9 @@
 *<sup>\*the only exception is mongodb module</sup>*
 
 Lapland is YAFJSF (yet another fraken JavaScript framework) I'm curious to play in development of.))
+
 Here's the [repo with the main module](https://github.com/UniBreakfast/lapland) itself.
+
 I struggled for some time trying to find the names for my modules that I would actually like. Until I decided to see them as actors working on the common task - in a sense like Santa's elfs. So the whole naming theme goes from there.
 
 ## Modular structure
