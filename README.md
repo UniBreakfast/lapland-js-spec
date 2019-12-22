@@ -19,7 +19,8 @@ I struggled for some time trying to find the names for my modules that I would a
 
 ## Lapland
 [(structure).](#modular-structure)/lapland.js 
-([repo](https://github.com/UniBreakfast/lapland))
+
+[go to repo...](https://github.com/UniBreakfast/lapland))
 
 The main module to load and start the rest of the framework.
 It exports the ```lapland``` object with the method to start it:
