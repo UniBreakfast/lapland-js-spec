@@ -106,3 +106,10 @@ a property reference to the database client object with the corresponding method
 
 #### `dataElf.addArr(name [,...names])`
 an async method that adds one or more new arrays (collections) to the database. That is if they are do not exist yet.
+
+#### `dataElf.addUser(login, hash)`
+an async method that adds a record to the `users` collection in the database.
+`login` and `hash` are supposed to be non empty strings. It will fail if there is already a record with that login. If successful it will return an `id` of created record.
+
+#### `dataElf.user(id | {login})`
+an async method that returns a record from the `users` collection (if finds one) by `id` or option property (like `login`). `id` supposed to be an integer, options object supposed to have property (or more) with values to find matching record. Returns `{id: Number, login: String, hash: String}` or null if nothing found.
