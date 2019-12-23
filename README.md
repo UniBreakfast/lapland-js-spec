@@ -1,4 +1,4 @@
-# Lapland specification (Vanilla* JS backend framework) 
+# Lapland specification (Vanilla* JS backend framework)
 *<sup>\*the only exception is mongodb module</sup>*
 
 Lapland is YAFJSF (yet another fraken JavaScript framework) I'm curious to play in development of.))
@@ -6,6 +6,9 @@ Lapland is YAFJSF (yet another fraken JavaScript framework) I'm curious to play 
 Here's the [repo with the main module](https://github.com/UniBreakfast/lapland) itself.
 
 I struggled for some time trying to find the names for my modules that I would actually like. Until I decided to see them as actors working on the common task - in a sense like Santa's elfs. So the whole naming theme goes from there.
+
+![Santa's Workshop sketch by Cécile Carre](https://raw.githubusercontent.com/UniBreakfast/lapland-js-spec/master/Cécile%20Carr%20-%20Santa's%20Workshop.jpg)
+[<sup>Santa's Workshop artwork by Cécile Carre</sup>](https://www.behance.net/gallery/68806033/Santas-Workshop)
 
 
 ## Modular structure
@@ -26,7 +29,7 @@ Interaction Diagrams are on [this page](https://github.com/UniBreakfast/lapland-
 
 
 ## Lapland
-[(structure).](#modular-structure)/lapland.js 
+[(structure).](#modular-structure)/lapland.js
 <sub>[(all files in repo)](https://github.com/UniBreakfast/lapland)</sub>
 
 The main module to load and start the rest of the framework.
@@ -39,7 +42,7 @@ an async method that takes ```details``` object with the next properties:
 
 
 ## Santa
-[(structure).](#modular-structure)/santa/index.js 
+[(structure).](#modular-structure)/santa/index.js
 <sub>[(all files in repo)](https://github.com/UniBreakfast/santa)</sub>
 
 A server module, creates an http-server and exports it, includes the request handler function [shop](#shop).
