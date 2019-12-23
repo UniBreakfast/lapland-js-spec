@@ -34,10 +34,10 @@ Interaction Diagrams are on [this page](https://github.com/UniBreakfast/lapland-
 <sub>[(all files in repo)](https://github.com/UniBreakfast/lapland)</sub>
 
 The main module to load and start the rest of the framework.
-It exports the ```lapland``` object with the method to start it:
+It exports the `lapland` object with the method to start it:
 
-#### ```lapland.wish(details)```
-an async method that takes ```details``` object with the next properties:
+#### `lapland.wish(details)`
+an async method that takes `details` object with the next properties:
 
 * **`details.PORT`** - a port to run at
 
@@ -94,4 +94,15 @@ A module that checks passwords when it is necessary and allows or denies the exe
 [(structure).](#modular-structure)/dataelf/index.js
 <sub>[(all files in repo)](https://github.com/UniBreakfast/dataelf)</sub>
 
-A module that handles data on its own or using a database.
+A module that handles data on its own or by using a database.
+
+It exports a `dataElf` object with one method to make it useful:
+
+#### `dataElf.link(dbStr)`
+a method that takes a connect string and makes more methods available on the `dataElf` object to work with the database. It also returns the `dataElf` object.
+
+#### `dataElf.db`
+a property reference to the database client object with the corresponding methods to query it directly.
+
+#### `dataElf.addArr(name [,...names])`
+an async method that adds one or more new arrays (collections) to the database. That is if they are do not exist yet.
