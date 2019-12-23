@@ -12,7 +12,7 @@ I struggled for some time trying to find the names for my modules that I would a
 
 * [Lapland](#lapland) - loader/starter module ([repo](https://github.com/UniBreakfast/lapland))
 * [Santa](#santa) - http server module ([repo](https://github.com/UniBreakfast/santa))
-* [gild](#gild) - request handler function (above)
+* [shop](#shop) - request handler function (above)
 * [home](#home) - public folder with client side files ([repo](https://github.com/UniBreakfast/home))
 * [apiBox](#apibox) - folder with api routes ([repo](https://github.com/UniBreakfast/apibox))
 * [apiElf](#apielf) - module to load and handle api routes ([repo](https://github.com/UniBreakfast/apielf))
@@ -44,11 +44,11 @@ an async method that takes ```details``` object with the next properties:
 
 A server module, creates an http-server and exports it, includes the request handler [gild](#gild).
 
-### gild
+### shop
 [(structure).](#modular-structure)/santa/index.js
 <sub>[(all files in repo)](https://github.com/UniBreakfast/santa)</sub>
 
-A function where the handling of every child's (client's) request to the [Santa](#santa) (server) happens.
+A shop (as in "Santa's workshop where elves are making and wrapping gifts for the children") is the function where the handling of every client's request to the [Santa](#santa) (server) happens.
 
 
 ## home
