@@ -7,7 +7,8 @@ Here's the [repo with the main module](https://github.com/UniBreakfast/lapland) 
 
 I struggled for some time trying to find the names for my modules that I would actually like. Until I decided to see them as actors working on the common task - in a sense like Santa's elfs. So the whole naming theme goes from there.
 
-![Santa's Workshop sketch by Cécile Carre](https://raw.githubusercontent.com/UniBreakfast/lapland-js-spec/master/Cécile%20Carr%20-%20Santa's%20Workshop.jpg)
+![Santa's Workshop sketch by Cécile Carre](https://raw.githubusercontent.com/UniBreakfast/lapland-js-spec/master/C%C3%A9cile%20Carre%20-%20Santa's%20Workshop.jpg)
+
 [<sup>Santa's Workshop artwork by Cécile Carre</sup>](https://www.behance.net/gallery/68806033/Santas-Workshop)
 
 
