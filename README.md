@@ -9,7 +9,7 @@ I struggled for some time trying to find the names for my modules that I would a
 
 ![Santa's Workshop sketch by Cécile Carre](https://raw.githubusercontent.com/UniBreakfast/lapland-js-spec/master/C%C3%A9cile%20Carre%20-%20Santa's%20Workshop.jpg)
 
-[<sup>Santa's Workshop artwork by Cécile Carre</sup>](https://www.behance.net/gallery/68806033/Santas-Workshop)
+<sup>kind of inspired by [Santa's Workshop artwork by Cécile Carre](https://www.behance.net/gallery/68806033/Santas-Workshop)</sup>
 
 
 ## Modular structure
