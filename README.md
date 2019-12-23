@@ -7,6 +7,7 @@ Here's the [repo with the main module](https://github.com/UniBreakfast/lapland) 
 
 I struggled for some time trying to find the names for my modules that I would actually like. Until I decided to see them as actors working on the common task - in a sense like Santa's elfs. So the whole naming theme goes from there.
 
+
 ## Modular structure
 
 * [Lapland](#lapland) - loader/starter module ([repo](https://github.com/UniBreakfast/lapland))
@@ -19,8 +20,10 @@ I struggled for some time trying to find the names for my modules that I would a
 * [passElf](#pasself) - module to handle passwords ([repo](https://github.com/UniBreakfast/pasself))
 * [dataElf](#dataelf) - module to handle data storage (db etc.) ([repo](https://github.com/UniBreakfast/dataelf))
 
+
 ### Flowcharts
 Interaction Diagrams are on [this page](https://github.com/UniBreakfast/lapland-js-spec/blob/master/flowcharts.md#bare-minimum-interactions)
+
 
 ## Lapland
 [(structure).](#modular-structure)/lapland.js 
@@ -34,6 +37,7 @@ an async method that takes ```details``` object with the next properties:
 
 * **`details.PORT`** - a port to run at
 
+
 ## Santa
 [(structure).](#modular-structure)/santa/index.js 
 <sub>[(all files in repo)](https://github.com/UniBreakfast/santa)</sub>
@@ -46,11 +50,13 @@ A server module, creates an http-server and exports it, includes the request han
 
 A function where the handling of every child's (client's) request to the [Santa](#santa) (server) happens.
 
+
 ## home
 [(structure).](#modular-structure)/home/*.html, *.css, *.js, *.jpg, *.png, ...
 <sub>[(all files in repo)](https://github.com/UniBreakfast/home)</sub>
 
 Public folder with the front-end files (client side) available on the server for client requests.
+
 
 ## apiBox
 [(structure).](#modular-structure)/api/routes/*.js
@@ -58,11 +64,13 @@ Public folder with the front-end files (client side) available on the server for
 
 An /api folder with js files exporting certain api handling functions.
 
+
 ## apiElf
 [(structure).](#modular-structure)/apielf/index.js
 <sub>[(all files in repo)](https://github.com/UniBreakfast/apielf)</sub>
 
 A module that loads api processing functions from [apiBox](#apibox) into an `api` object, selects and calls the appropriate one when request requires it.
+
 
 ## sesElf
 [(structure).](#modular-structure)/seself/index.js
@@ -77,8 +85,9 @@ A module that handles sessions when it is necessary and allows or denies the exe
 
 A module that checks passwords when it is necessary and allows or denies the execution of the api handler function.
 
+
 ## dataElf
 [(structure).](#modular-structure)/dataelf/index.js
 <sub>[(all files in repo)](https://github.com/UniBreakfast/dataelf)</sub>
 
-A module that handles data by on its own or using a database.
+A module that handles data on its own or using a database.
