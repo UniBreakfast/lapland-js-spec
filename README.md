@@ -42,7 +42,7 @@ an async method that takes ```details``` object with the next properties:
 [(structure).](#modular-structure)/santa/index.js 
 <sub>[(all files in repo)](https://github.com/UniBreakfast/santa)</sub>
 
-A server module, creates an http-server and exports it, includes the request handler [gild](#gild).
+A server module, creates an http-server and exports it, includes the request handler function [shop](#shop).
 
 ### shop
 [(structure).](#modular-structure)/santa/index.js
