@@ -101,6 +101,45 @@ when request requires it.
 
 A module that handles sessions when it is necessary and allows
 or denies the execution of the api handler function.
+It provides methods to start or end sessions, list them, label, limit by time.
+
+It exports a `sesElf` object with one method
+to acquaint with the `passElf` and `dataElf` objects it needs to do its job:
+
+#### `sesElf.attach(dataElf)`
+a method that takes a reference to the `dataElf` object it should use.
+That makes more methods available on the `sesElf` object and returns it.
+
+#### `sesElf.start(userid)`
+a method that takes `userid` number and creates a session for that user.
+It then returns an object `{sid, token}` with the `id` of session created and
+a `token` to check its validity.
+If user with `userid` isn't found it returns`false`.
+
+#### `sesElf.check({sid, token})`
+an async method that takes a `ses` object with session id and `token`
+and checks if that session exists and if `token` is valid.
+Returns new token if session is confirmed and `false` if otherwise.
+
+#### `sesElf.end(sid)`
+an async method that takes a `sid` number and deletes the session with that id.
+Returns `true` if session was found and deleted and `false` otherwise.
+
+#### `sesElf.label(sid, label)`
+an async method that takes a `sid` number and a `label` string
+and names the session found by that id with that `label`.
+Returns `true` if successful and `false` if session not found.
+
+#### `sesElf.limit(sid, timeout)`
+an async method that takes `sid` and `timeout` numbers and sets the idle
+life limit for the corresponding session (counting from the last check).
+It disables the limit if `timeout` is falsy.
+Returns `true` if successful and `false` if session not found.
+
+#### `sesElf.limitAll(userid, timeout)`
+an async method that takes `userid` and `timeout` numbers and sets the idle
+life limit all the sessions current and future for the user with that id.
+
 
 
 ## passElf
@@ -109,6 +148,31 @@ or denies the execution of the api handler function.
 
 A module that checks passwords when it is necessary and allows
 or denies the execution of the api handler function.
+It also registers new users and allows the password change if necessary.
+
+It exports a `passElf` object with one method
+to acquaint with the `dataElf` object it needs to do its job:
+
+#### `passElf.attach(dataElf)`
+a method that takes a reference to the `dataElf` object it should use.
+That makes more methods available on the `dataElf` object and returns it.
+
+#### `passElf.reg(login, pass)`
+an async method that takes non empty strings `login` and `pass` and
+registers a new user with password hashed.
+If login is already occupied it should return `false`.
+If successful it should return the `id` of newly made user record.
+
+#### `passElf.check(id | login, pass)`
+an async method that takes an `id` number or a `login` string and
+a `pass` string, checks if it is the correct password according to hash.
+Returns `true` if positive, `false` if not, `null` if brute force suspected.
+
+#### `passElf.change(id | login, pass)`
+an async method that takes an `id` number or a `login` string and
+a `pass` string, and saves this new password hashed for the user.
+Returns `true` if successful, `false` if not (old password).
+Fails if `id`/`login` not found.
 
 
 ## dataElf
@@ -120,7 +184,7 @@ A module that handles data on its own or by using a database.
 It exports a `dataElf` object with one method to make it useful:
 
 #### `dataElf.link(dbStr)`
-a method that takes a connect string and makes more methods available
+an async method that takes a connect string and makes more methods available
 on the `dataElf` object to work with the database.
 It also returns the `dataElf` object.
 
