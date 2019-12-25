@@ -180,6 +180,8 @@ Fails if `id`/`login` not found.
 <sub>[(all files in repo)](https://github.com/UniBreakfast/dataelf)</sub>
 
 A module that handles data on its own or by using a database.
+Multiple convenient methods to run complex queries on the db
+are supposed to be added to it after linking.
 
 It exports a `dataElf` object with one method to make it useful:
 
