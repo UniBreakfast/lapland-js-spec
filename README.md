@@ -162,11 +162,17 @@ an async method that takes non empty strings `login` and `pass` and
 registers a new user with password hashed.
 If login is already occupied it should return `false`.
 If successful it should return the `id` of newly made user record.
+To do its job it supposed to use bcryptjs hashing
+and `dataElf.addUser(login, hash)`.
 
 #### `passElf.check(id | login, pass)`
 an async method that takes an `id` number or a `login` string and
 a `pass` string, checks if it is the correct password according to hash.
 Returns `true` if positive, `false` if not, `null` if brute force suspected.
+To do its job it supposed to use bcryptjs comparing,
+`dataElf.user(id | {login})`, `dataElf.updUser(id, {...props})` and `sleep`.
+If checks are too frequent (more then 3 sequential) there are increasing delays
+per user with locking until ready to check again (up to 5 minutes).
 
 #### `passElf.change(id | login, pass)`
 an async method that takes an `id` number or a `login` string and
