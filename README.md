@@ -272,3 +272,9 @@ an async method that updates a record in the `sessions` collection in the db.
 It supposed to find the record by the `sid`.
 It should return `false` if record not found
 or `true` if record found and updated.
+
+#### `dataElf.delSes(sid)`
+an async method that deletes a record in the `sessions` collection in the db.
+It supposed to find the record by the `sid`.
+It should return `false` if record not found
+or `true` if record found and deleted.
