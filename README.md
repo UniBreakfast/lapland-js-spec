@@ -1,4 +1,5 @@
-# Lapland specification (Vanilla* JS backend framework)
+# [Lapland specification](https://github.com/UniBreakfast/lapland-js-spec) (Vanilla* JS backend framework)
+
 *<sup>\*the only exception is mongodb module</sup>*
 
 Lapland is YAFJSF (yet another fraken JavaScript framework)
